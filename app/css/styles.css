@@ -1,24 +1,51 @@
 
-  ul {
+  
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  html {
+    height: 100%;
+  }
+  .wrapper ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #060000;
   }
   
-  li {
+  .wrapper li {
     float: left;
   }
   
-  li a {
+  .wrapper li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 20px 30px;
     text-decoration: none;
   }
   
-  li a:hover {
+  .wrapper li a:hover {
     background-color: #111;
+  }
+
+  .banner {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-image.jpeg");
+  
+    height: 50%;
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .message {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
   }
