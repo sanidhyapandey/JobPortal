@@ -10,22 +10,19 @@ xhr.onload = function () {
         console.log(myData);
     }
 }
-var myString = "";
-var input = document.getElementById('search');
-console.log(input.value);
-var keyword = input.value.toLowerCase();
-var display = document.getElementById('message');
+
 function saveInput() {
-
-
-
+    var myString = "";
+    var input = document.getElementById('search');
+    console.log(input.value);
+    var keyword = input.value.toLowerCase();
     for (i = 0; i < myData.jobs.length; i++) {
         var data = JSON.stringify(myData.jobs[i]).toLowerCase();
         if (data.search(keyword) != -1) {
             console.log(myData.jobs[i]);
-            myString += JSON.stringify(myData.jobs[i]).split();
+            myString += JSON.stringify(myData.jobs[i]);
         }
-        display.innerHTML = myString;
+        document.getElementById('message').innerHTML = myString.split();
     }
 
 }
