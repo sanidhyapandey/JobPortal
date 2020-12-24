@@ -10,33 +10,25 @@ xhr.onload = function () {
         console.log(myData);
     }
 }
+var searchInput = document.getElementById('search');
+searchInput.addEventListener('input', updateValue);
 
-function saveInput() {
-    var myString = "";
-    var input = document.getElementById('search');
-    console.log(input.value);
-    var keyword = input.value.toLowerCase();
-    for (i = 0; i < myData.jobs.length; i++) {
-        var data = JSON.stringify(myData.jobs[i]).toLowerCase();
-        if (data.search(keyword) != -1) {
-            console.log(myData.jobs[i]);
-            myString += JSON.stringify(myData.jobs[i]);
+function updateValue(e) {
+    document.getElementById('holder').innerHTML = "";
+    if (e.target.value.length > 2) {
+        for (i = 0; i < myData.jobs.length; i++) {
+            var data = JSON.stringify(myData.jobs[i]).toLowerCase();
+            console.log(e.target.value);
+            if (data.search(e.target.value) != -1) {
+                console.log(myData.jobs[i]);
+                var elem = document.createElement('div');
+                elem.setAttribute("id", "job");
+
+                elem.innerHTML = '<h2 id="profile">' + "Profile : " + myData.jobs[i].profile + '</h2>' + '<h3 id="company">' + "Company : "  + myData.jobs[i].company + '</h2>' + '<h4 id="salary">' + "Salary : "  + myData.jobs[i].salary + '</h2>';
+
+                document.getElementById('holder').appendChild(elem);
+            }
         }
-        document.getElementById('message').innerHTML = myString.split();
     }
-
 }
-
-// const outputHtml = myString => {
-//     if (myString.length > 0) {
-//         const html = myString.map(match => `
-//         <div class="details">
-//         <h4>${match.name}</h4>
-//         </div>
-//         `
-//         ).join('');
-//         console.log(html);    }
-// }
-
-
 xhr.send();

@@ -12,7 +12,11 @@
 
 <body>
     <header>
-        <nav class="wrapper">
+        <div class="container">
+        <div class="logo-wrapper">
+           <!-- <img src="./images/logo.jpg" alt="logopic"> -->
+        </div>
+        <nav class="wrapper-text">
             <ul>
                 <li><a href="/">Home</a> </li>
                 <li><a href="/">Admin</a> </li>
@@ -20,15 +24,20 @@
             </ul>
 
         </nav>
+        </div>
     </header>
     <section class="banner">
     <div id="message">
         <h1>Find Your Dream Job Here</h1>
-        <input id="search" placeholder="Search Job" type="text">
-        <button type="submit" name="search" onclick="saveInput()">Search</button>
-        <script type="text/javascript" src="main.js"></script>
+        <input id="search" placeholder="Search Job" type="text" autocomplete="new-password">
+
     </div>
+    
     </section>
+    <section>
+        <div id="holder"></div>
+    </section>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 
 
