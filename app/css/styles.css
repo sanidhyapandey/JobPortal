@@ -1,69 +1,145 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
 
-  
-  body {
-    margin: 0;
-  }
-  .wrapper-text ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #060000;
-  }
-  
-  .wrapper-text li {
-    float: left;
-  }
-  
-  .wrapper-text li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 30px;
-    text-decoration: none;
-  }
-  
-  .wrapper-text li a:hover {
-    background-color: #111;
-  }
 
-  .banner {
-    height: 500px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-image.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-  }
-  #message {
-    margin: 0;
-    color: white;
-  }
-  #search {
-    padding-top: 10px;
-    padding-right: 50px;
-  }
- 
-  ::placeholder {
-    font-size: 20px;
-    color: black;
-  }
-  #searchbtn {
-    size: 20px;
-  }
 
-  #profile {
-    color:red;
-  }
-  #job {
-    border: 1px red;
-    padding-left: 20px;
-  }
-  #profile {
-    margin-bottom: -20px;
-  }
-  #company {
-    margin-bottom: -20px;
-  }
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+.header .header__BQlogo {
+  float: left;
+  margin-left: 30px;
+}
+
+.header .header__navbar {
+  margin-right: 60px;
+  display: flex;
+  margin-left: auto;
+}
+
+.logocls {
+  height: 90px;
+  width: 100px;
+  border-radius: 25%;
+}
+
+.header .header__menu, .header {
+  display: flex;
+}
+
+.header .header__menu {
+  font-size: 20px;
+  padding-top: 15px;
+  padding-right: 40px;
+}
+
+.header .header__menu .header__items {
+  display: inline;
+  padding-left: 36px;
+}
+
+.header__items a {
+  text-decoration: none;
+  color: #ff9109;
+  margin-top: 5px;
+}
+
+.header .header__navbarBtn {
+  border: 1.5px solid #DCDCDC;
+  font-size: 18px;
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.banner {
+  height: 500px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/banner-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  margin: 0;
+  color: white;
+}
+
+#search {
+  padding-top: 10px;
+  padding-right: 50px;
+}
+
+::placeholder {
+  font-size: 20px;
+  color: black;
+}
+
+#searchbtn {
+  size: 20px;
+}
+
+#profile {
+  color: red;
+}
+
+#job {
+  border: 1px red;
+  padding-left: 20px;
+}
+
+#profile {
+  margin-bottom: -20px;
+}
+
+#company {
+  margin-bottom: -20px;
+}
+.footer p {
+  color:white;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+
+.footer .footer__navbar {
+  margin-right: 60px;
+  display: flex;
+  margin-left: auto;
+}
+
+
+
+.footer .footer__menu, .footer {
+  display: flex;
+}
+
+.footer .footer__menu {
+  font-size: 20px;
+  padding-top: 5px;
+  padding-right: 40px;
+}
+
+.footer .footer__menu .footer__items {
+  display: inline;
+  padding-left: 36px;
+}
+
+.footer__items a {
+  text-decoration: none;
+  color: #ff9109;
+  margin-top: 5px;
+}

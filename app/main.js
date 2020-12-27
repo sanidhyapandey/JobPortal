@@ -24,7 +24,7 @@ function updateValue(e) {
                 var elem = document.createElement('div');
                 elem.setAttribute("id", "job");
 
-                elem.innerHTML = '<h2 id="profile">' + "Profile : " + myData.jobs[i].profile + '</h2>' + '<h3 id="company">' + "Company : "  + myData.jobs[i].company + '</h2>' + '<h4 id="salary">' + "Salary : "  + myData.jobs[i].salary + '</h2>';
+                elem.innerHTML = '<h2 id="profile">' + "Profile : " + myData.jobs[i].profile + '</h2>' + '<h3 id="company">' + "Company : "  + myData.jobs[i].company + '</h3>' + '<h4 id="salary">' + "Salary : "  + myData.jobs[i].salary + '</h4>' + '<h4 id="salary">' + "Location : "  + myData.jobs[i].location + '</h4>';
 
                 document.getElementById('holder').appendChild(elem);
             }
