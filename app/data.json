@@ -22,5 +22,11 @@
         "salary" : "6lpa" , 
         "company" : "Bank Of America",
         "location" : "Mumbai"
-    } 
+    } ,
+    {
+        "profile" : "Software Engineer", 
+        "salary" : "12lpa" , 
+        "company" : "Amazon",
+        "location" : "Bangalore"
+    }
 ] }

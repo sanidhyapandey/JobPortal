@@ -13,7 +13,7 @@ body {
 
 .header .header__BQlogo {
   float: left;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 .header .header__navbar {
@@ -86,25 +86,21 @@ body {
   size: 20px;
 }
 
-#profile {
-  color: red;
-}
+
 
 #job {
   border: 1px red;
   padding-left: 20px;
 }
-
-#profile {
+#job h3,h2 {
+  color: #ff9109;
   margin-bottom: -20px;
 }
 
-#company {
-  margin-bottom: -20px;
+#apply {
+  margin-top: 20px;
 }
-#salary {
-  margin-bottom: -20px;
-}
+
 .footer p {
   color:white;
   padding-top: 15px;
@@ -145,4 +141,7 @@ body {
   text-decoration: none;
   color: #ff9109;
   margin-top: 5px;
+}
+.description p {
+  color: white;
 }

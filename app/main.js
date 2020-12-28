@@ -4,13 +4,16 @@ xhr.open('GET', 'data.json', true);
 xhr.responseType = 'text';
 var myData;
 
+// Load JSON Data 
+
 xhr.onload = function () {
     if (xhr.status === 200) {
         myData = JSON.parse(xhr.responseText);
         console.log(myData);
     }
 }
-var searchInput = document.getElementById('search');
+
+var searchInput = document.getElementById('search');   // Get Search Input Value
 searchInput.addEventListener('input', updateValue);
 
 function updateValue(e) {
@@ -24,7 +27,7 @@ function updateValue(e) {
                 var elem = document.createElement('div');
                 elem.setAttribute("id", "job");
 
-                elem.innerHTML = '<h2 id="profile">' + "Profile : " + myData.jobs[i].profile + '</h2>' + '<h3 id="company">' + "Company : "  + myData.jobs[i].company + '</h3>' + '<h4 id="salary">' + "Salary : "  + myData.jobs[i].salary + '</h4>' + '<h4 id="location">' + "Location : "  + myData.jobs[i].location + '</h4>';
+                elem.innerHTML = '<h2 id="profile">' + "Profile : " + myData.jobs[i].profile + '</h2>' + '<h3 id="company">' + "Company : "  + myData.jobs[i].company + '</h3>' + '<h3 id="salary">' + "Salary : "  + myData.jobs[i].salary + '</h3>' + '<h3 id="location">' + "Location : "  + myData.jobs[i].location + '</h3>' + ' <a id="apply" href="./job_description.html">Apply Now</a>';
 
                 document.getElementById('holder').appendChild(elem);
             }
