@@ -38,7 +38,7 @@ console.log(searchInput.value);
 // }
 function searchResult() {
     console.log(searchInput.value);
-   // document.getElementById('holder1').innerHTML = "";
+   document.getElementById('holder1').innerHTML = "";
 
     for (i = 0; i < myData.jobs.length; i++) {
         var data = JSON.stringify(myData.jobs[i]).toLowerCase();
@@ -55,5 +55,6 @@ function searchResult() {
     }
 
 }
+
 
 xhr.send();
