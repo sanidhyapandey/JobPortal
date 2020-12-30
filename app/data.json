@@ -1,31 +1,31 @@
 {"jobs" : [
     {
         "profile" : "Full Stack Developer",
-         "salary" : "5lpa" , 
+         "salary" : "500000" , 
          "company" : "Deloitte",
          "location" : "Hyderabad"
          } ,
     {
         "profile" : "QA Engineer" , 
-        "salary" :"4lpa" , 
+        "salary" :"400000" , 
         "company" : "TA Digital",
         "location" : "Gurgaon"
         } ,
     {
         "profile" : "HR Assistant", 
-        "salary" : "3lpa" , 
+        "salary" : "300000" , 
         "company" : "Google",
         "location" : "Bangalore"
         } ,
     {
         "profile" : "Accounts Assistant", 
-        "salary" : "6lpa" , 
+        "salary" : "600000" , 
         "company" : "Bank Of America",
         "location" : "Mumbai"
     } ,
     {
         "profile" : "Software Engineer", 
-        "salary" : "12lpa" , 
+        "salary" : "1200000" , 
         "company" : "Amazon",
         "location" : "Bangalore"
     }
