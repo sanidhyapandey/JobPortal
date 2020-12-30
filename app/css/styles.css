@@ -94,7 +94,6 @@ body {
 }
 #job h3,h2 {
   color: #ff9109;
-  margin-bottom: -20px;
 }
 
 #apply {
@@ -122,6 +121,7 @@ body {
 
 
 
+
 .footer .footer__menu, .footer {
   display: flex;
 }
@@ -144,4 +144,11 @@ body {
 }
 .description p {
   color: white;
+}
+
+.jobfilters {
+  display: flex;
+}
+.filters {
+  flex: 50%;
 }

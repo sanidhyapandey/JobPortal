@@ -27,6 +27,7 @@
         <div id="message">
             <h1>Find Your Dream Job Here</h1>
             <input id="search" placeholder="Search Profiles,Companies,Locations" type="text" size="32">
+            <button type="submit" onclick="searchResult()">Search</button>
             <!-- <label for="cars">Choose a filter:</label>
 
             <select id="cars">
@@ -37,6 +38,33 @@
         </div>
         <div id="holder"></div>
 
+    </section>
+    <section class="jobfilters">
+        <div class="filters">
+        <h1>Filters</h1>
+        <h2>Salary</h2>
+        <form>
+            <input type="checkbox" name="salfilter1" value="3lpa">
+            <label for="salfilter1">3lpa</label><br>
+            <input type="checkbox" name="salfilter2" value="4lpa">
+            <label for="salfilter2">4lpa</label><br>
+            <input type="checkbox" name="salfilter3" value="5lpa" checked>
+            <label for="salfilter3">5lpa</label><br><br>
+
+            <h2>Location</h2>
+
+            <input type="checkbox" name="vehicle1" value="Bike">
+            <label for="vehicle1"> Hyderabad</label><br>
+            <input type="checkbox" name="vehicle2" value="Car">
+            <label for="vehicle2"> Mumbai</label><br>
+            <input type="checkbox" name="vehicle3" value="Boat" checked>
+            <label for="vehicle3"> Bangalore</label><br><br>
+            <input type="checkbox" name="vehicle3" value="Boat" checked>
+            <label for="vehicle3"> Chennai</label><br><br>
+            <input type="submit" value="Apply Filter">
+        </form>
+        </div>
+        <div id="holder1" class="filters"></div>
     </section>
     <footer class="footer">
         <p>All Copyrights belong to DreamJobs</p>
